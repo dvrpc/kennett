@@ -2558,3 +2558,21 @@ label
 .esriCTSigninHelpLink {
     text-shadow:none;
 }
+.esriCTHeaderTextColorAsBorder {
+    border-color: #312867 !important;
+}
+.dvrpcHeaderName{
+    padding-left:15px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size:2.6em;
+    color: #312867;
+    line-height: 47px;
+}
+.subtitleHeader{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 1.8em;
+}
