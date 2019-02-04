@@ -2502,3 +2502,59 @@ label
     float: left;
 }
 /** Basemap gallery section ends **/
+
+
+/** DVRPC Styles for Kennett Project **/
+/** Author: Michael Ruane **/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+.esriCTSigninSplash{
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.signinTextOverview{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.2em;
+    padding: 10px 50px;
+    max-width: 600px;
+    display: inline-block;
+}
+.dvrpcAppNameBanner{
+    width: 400px;
+    height: 225px;
+    max-height:225px;
+    border-radius:20px;
+    background-color:white;
+    position: relative;
+    margin: 0 auto;
+    color:#312867;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+.dvrpcAppNameBanner:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid #312867;
+  }
+.titleKennett{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size:2.6em;
+}
+.subtitleKennett {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+}
+.esriCTSigninAppNameDiv{
+    display:none;
+}
+.esriCTSigninHelpLink {
+    text-shadow:none;
+}

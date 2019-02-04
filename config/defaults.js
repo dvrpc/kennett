@@ -56,7 +56,7 @@ define({
     "applicationFavicon": "/images/favicon.ico",
 
     "signInSubtitle": "",
-    "signInBackgroundImage": "/images/signinbg.png",
+    "signInBackgroundImage": " ",
 
     "searchedAddressPushpinImage":"/images/redstickpin.png",
     "enableGuestAccess": true,
@@ -130,7 +130,7 @@ define({
     //Configurable text for help dialog and help link
     "enableHelp":true,
     "enableShare": false,
-    "helpLinkText": "How To Use",
+    "helpLinkText": "learn how to use this tool",
     "helpDialogTitle":"How To Use",
     "helpDialogContent": '<p>The tool provides the option of reporting your input as a point on the map. After drawing one of these features the interface will ask you for the type of input you are reporting:</p><ul><li>Truck routing - issues or concerns about the movements of truck on a given street or neighborhood</li><li>Intersection design - issues or concerns related to an intersection </li><li>Safety - input on a location or area where you perceive an unsafe condition or behavior by motor vehicles or other road users (bicyclists)</li><li>Bike/pedestrian - input on bicycle or pedestrian user challenges, opportunities, and/or issues</li><li>Other - anything not represented by another category</li></ul><p>The interface also provides a text box for you to describe in detail what the input is. Please be as specific as possible so that we can make the best use of your input in the formulation of recommendations.</p><p>If you have any questions or issues with the tool please reach out to Mike Ruane, Manager of Freight and Aviation Programs at DVRPC by phone (215.238.2888) or email (<a href="mailto:mruane@dvrpc.org">mruane@dvrpc.org</a>)</p>',
     "enableDifferentHelpContent":false,
