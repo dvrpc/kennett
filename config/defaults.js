@@ -50,13 +50,13 @@ define({
          }]
   },
       //color theme.
-    "theme": "#137DB9",
+    "theme": "#312867",
     "applicationName": "",
     "applicationIcon": "",
     "applicationFavicon": "/images/favicon.ico",
 
     "signInSubtitle": "",
-    "signInBackgroundImage": "/images/signinbg.png",
+    "signInBackgroundImage": " ",
 
     "searchedAddressPushpinImage":"/images/redstickpin.png",
     "enableGuestAccess": true,
@@ -123,19 +123,19 @@ define({
     //Lower level configuration
     "submitReportButtonText" : "Submit a Report", // Text for submit report button
     "submitReportButtonColor": "#35ac46", //Color for Submit Report button.If EMPTY default color will be  #35ac46.
-    "submitReportButtonPosition": "bottom", // Report buttons position (top/bottom)
+    "submitReportButtonPosition": "top", // Report buttons position (top/bottom)
     "splashScreenTextColor": "#FFF", // Color of splash screen content
-    "imageBackgroundColor": "#999999", // Background color icons
+    "imageBackgroundColor": "#312867", // Background color icons
     "imageForeGroundColor": "white", // Foreground color of icons values (gray or white)
     //Configurable text for help dialog and help link
     "enableHelp":true,
-    "enableShare": false,
-    "helpLinkText": "How To Use",
+    "enableShare": true,
+    "helpLinkText": "learn how to use this tool",
     "helpDialogTitle":"How To Use",
-    "helpDialogContent": '<p>The tool provides the option of reporting your input as a point on the map. After drawing one of these features the interface will ask you for the type of input you are reporting:</p><ul><li>Truck routing - issues or concerns about the movements of truck on a given street or neighborhood</li><li>Intersection design - issues or concerns related to an intersection </li><li>Safety - input on a location or area where you perceive an unsafe condition or behavior by motor vehicles or other road users (bicyclists)</li><li>Bike/pedestrian - input on bicycle or pedestrian user challenges, opportunities, and/or issues</li><li>Other - anything not represented by another category</li></ul><p>The interface also provides a text box for you to describe in detail what the input is. Please be as specific as possible so that we can make the best use of your input in the formulation of recommendations.</p><p>If you have any questions or issues with the tool please reach out to Mike Ruane, Manager of Freight and Aviation Programs at DVRPC by phone (215.238.2888) or email (<a href="mailto:mruane@dvrpc.org">mruane@dvrpc.org</a>)</p>',
+    "helpDialogContent": '<p>This tool is intended for reporting concerns and input on issues related the Kennett Area Freight Transportation Study.</p><p><b>To get started select the green “Submit a Report” button.</b> This will open the reporting form for you to enter your comments.</p><p><b>1. Select Issue Type:</b><br>The form provides the option of reporting several types of input:<ul><li>Truck Routing - issues or concerns about the movements of truck on a given street or neighborhood</li><li>Intersection Design - issues or concerns related to an intersection </li><li>Safety - input on a location or area where you perceive an unsafe condition or behavior by motor vehicles or other road users (bicyclists)</li><li>Bike/Pedestrian - input on bicycle or pedestrian user challenges, opportunities, and/or issues</li><li>Other - anything not represented by another category</li></ul></p><p><b>2. Describe the concern/issue:</b><br>The interface also provides a text box for you to describe in detail your concerns. Please be as specific as possible so that we can make the best use of your input in the formulation of recommendations. If additional space is required, comments can be added to the report after it is submitted.</p><p><b>3. Search or select the location:</b><br>Search using the location input or navigate to the point on the map that represents location of your concern. If the location is a route or larger area, select near the location and be sure this was specified in the description.</p><p><b>4. Submit your report</b></p><p>If you have any questions or issues with the tool please reach out to Mike Ruane, Manager of Freight and Aviation Programs at DVRPC by phone (215.238.2888) or email (<a href="mailto:mruane@dvrpc.org">mruane@dvrpc.org</a>).</p>',
     "enableDifferentHelpContent":false,
     "loginHelpDialogTitle":"How To Use",
-    "loginHelpDialogContent": '<p>The tool provides the option of reporting your input as a point on the map. After drawing one of these features the interface will ask you for the type of input you are reporting:</p><ul><li>Truck routing - issues or concerns about the movements of truck on a given street or neighborhood</li><li>Intersection design - issues or concerns related to an intersection </li><li>Safety - input on a location or area where you perceive an unsafe condition or behavior by motor vehicles or other road users (bicyclists)</li><li>Bike/pedestrian - input on bicycle or pedestrian user challenges, opportunities, and/or issues</li><li>Other - anything not represented by another category</li></ul><p>The interface also provides a text box for you to describe in detail what the input is. Please be as specific as possible so that we can make the best use of your input in the formulation of recommendations.</p><p>If you have any questions or issues with the tool please reach out to Mike Ruane, Manager of Freight and Aviation Programs at DVRPC by phone (215.238.2888) or email (<a href="mailto:mruane@dvrpc.org">mruane@dvrpc.org</a>)</p>',
+    "loginHelpDialogContent": '<p>This tool is intended for reporting concerns and input on issues related the Kennett Area Freight Transportation Study.</p><p><b>To get started select the green “Submit a Report” button.</b> This will open the reporting form for you to enter your comments.</p><p><b>1. Select Issue Type:</b><br>The form provides the option of reporting several types of input:<ul><li>Truck Routing - issues or concerns about the movements of truck on a given street or neighborhood</li><li>Intersection Design - issues or concerns related to an intersection </li><li>Safety - input on a location or area where you perceive an unsafe condition or behavior by motor vehicles or other road users (bicyclists)</li><li>Bike/Pedestrian - input on bicycle or pedestrian user challenges, opportunities, and/or issues</li><li>Other - anything not represented by another category</li></ul></p><p><b>2. Describe the concern/issue:</b><br>The interface also provides a text box for you to describe in detail your concerns. Please be as specific as possible so that we can make the best use of your input in the formulation of recommendations. If additional space is required, comments can be added to the report after it is submitted.</p><p><b>3. Search or select the location:</b><br>Search using the location input or navigate to the point on the map that represents location of your concern. If the location is a route or larger area, select near the location and be sure this was specified in the description.</p><p><b>4. Submit your report</b></p><p>If you have any questions or issues with the tool please reach out to Mike Ruane, Manager of Freight and Aviation Programs at DVRPC by phone (215.238.2888) or email (<a href="mailto:mruane@dvrpc.org">mruane@dvrpc.org</a>).</p>',
     "bufferRadius": 3, //Buffer radius will be used to create inital buffer on applicaiton load
     "bufferUnit": "miles",
     "geoformDetailsSectionLabel": "Details", //label for details section in geoform
@@ -148,7 +148,7 @@ define({
     "bodyBackgroundColor":"#fff",
     "bodyTextColor":"#515151",
     "buttonBackgroundColor":"#fff",
-    "buttonTextColor": "#137DB9",
+    "buttonTextColor": "#312867",
     // reporting period value
     "reportingPeriodDialogTitle": "Reporting Period Closed",
     "reportingPeriodDialogContent": "We are no longer accepting new reports for this project.",

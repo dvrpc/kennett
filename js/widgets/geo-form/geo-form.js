@@ -1020,11 +1020,14 @@ define([
             }
             // If field has alias
             // else Set field name
-            if (currentField.alias) {
+            if (currentField.alias && currentField.name !== "DETAILS") {
                 fieldLabelText = currentField.alias;
+            } else if (currentField.name === "DETAILS" ){
+                fieldLabelText = 'Describe issue/concern: <span class="geoformNote" style="color:#a2a2a2">(max 255 characters)</span>';
             } else {
                 fieldLabelText = currentField.name;
             }
+            console.log(currentField)
             // assign field name
             fieldname = currentField.name;
             // Create Label
@@ -1258,7 +1261,7 @@ define([
             // Create field controls on basis of their type
             switch (currentField.type) {
             case "esriFieldTypeString":
-                if (currentField.stringFieldOption === "textarea") {
+                if (currentField.stringFieldOption === "textarea" || fieldname === "DETAILS") {
                     this.inputContent = domConstruct.create("textarea", {
                         className: "form-control",
                         "data-input-type": "String",
