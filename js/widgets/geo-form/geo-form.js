@@ -1259,7 +1259,7 @@ define([
             // Create field controls on basis of their type
             switch (currentField.type) {
             case "esriFieldTypeString":
-                if (currentField.stringFieldOption === "textarea") {
+                if (currentField.stringFieldOption === "textarea" || fieldname === "DETAILS") {
                     this.inputContent = domConstruct.create("textarea", {
                         className: "form-control",
                         "data-input-type": "String",
