@@ -1025,6 +1025,7 @@ define([
             } else {
                 fieldLabelText = currentField.name;
             }
+            console.log(currentField)
             // assign field name
             fieldname = currentField.name;
             // Create Label

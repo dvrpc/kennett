@@ -2576,3 +2576,16 @@ label
     font-weight: 400;
     font-size: 1.8em;
 }
+.esriCTSigninMainDiv{
+    overflow: auto;
+}
+
+@media only screen and (max-width:900px){
+.subtitleHeader{
+    display: none;
+}
+.dvrpcHeaderName {
+    font-size:2em;
+    line-height: 40px
+}
+}

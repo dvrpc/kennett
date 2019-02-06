@@ -50,7 +50,7 @@ define({
          }]
   },
       //color theme.
-    "theme": "#137DB9",
+    "theme": "#312867",
     "applicationName": "",
     "applicationIcon": "",
     "applicationFavicon": "/images/favicon.ico",
@@ -123,13 +123,13 @@ define({
     //Lower level configuration
     "submitReportButtonText" : "Submit a Report", // Text for submit report button
     "submitReportButtonColor": "#35ac46", //Color for Submit Report button.If EMPTY default color will be  #35ac46.
-    "submitReportButtonPosition": "bottom", // Report buttons position (top/bottom)
+    "submitReportButtonPosition": "top", // Report buttons position (top/bottom)
     "splashScreenTextColor": "#FFF", // Color of splash screen content
-    "imageBackgroundColor": "#999999", // Background color icons
+    "imageBackgroundColor": "#312867", // Background color icons
     "imageForeGroundColor": "white", // Foreground color of icons values (gray or white)
     //Configurable text for help dialog and help link
     "enableHelp":true,
-    "enableShare": false,
+    "enableShare": true,
     "helpLinkText": "learn how to use this tool",
     "helpDialogTitle":"How To Use",
     "helpDialogContent": '<p>The tool provides the option of reporting your input as a point on the map. After drawing one of these features the interface will ask you for the type of input you are reporting:</p><ul><li>Truck routing - issues or concerns about the movements of truck on a given street or neighborhood</li><li>Intersection design - issues or concerns related to an intersection </li><li>Safety - input on a location or area where you perceive an unsafe condition or behavior by motor vehicles or other road users (bicyclists)</li><li>Bike/pedestrian - input on bicycle or pedestrian user challenges, opportunities, and/or issues</li><li>Other - anything not represented by another category</li></ul><p>The interface also provides a text box for you to describe in detail what the input is. Please be as specific as possible so that we can make the best use of your input in the formulation of recommendations.</p><p>If you have any questions or issues with the tool please reach out to Mike Ruane, Manager of Freight and Aviation Programs at DVRPC by phone (215.238.2888) or email (<a href="mailto:mruane@dvrpc.org">mruane@dvrpc.org</a>)</p>',
@@ -148,7 +148,7 @@ define({
     "bodyBackgroundColor":"#fff",
     "bodyTextColor":"#515151",
     "buttonBackgroundColor":"#fff",
-    "buttonTextColor": "#137DB9",
+    "buttonTextColor": "#312867",
     // reporting period value
     "reportingPeriodDialogTitle": "Reporting Period Closed",
     "reportingPeriodDialogContent": "We are no longer accepting new reports for this project.",
