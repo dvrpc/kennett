@@ -1020,8 +1020,10 @@ define([
             }
             // If field has alias
             // else Set field name
-            if (currentField.alias) {
+            if (currentField.alias && currentField.name !== "DETAILS") {
                 fieldLabelText = currentField.alias;
+            } else if (currentField.name === "DETAILS" ){
+                fieldLabelText = 'Describe issue/concern: <span class="geoformNote" style="color:#a2a2a2">(max 255 characters)</span>';
             } else {
                 fieldLabelText = currentField.name;
             }
