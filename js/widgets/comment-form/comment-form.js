@@ -97,6 +97,7 @@ define([
             domAttr.set(this.postCommentButton, "innerHTML", submitCommentText);
             domAttr.set(this.postCommentButton, "title", submitCommentText);
             domAttr.set(this.postCommentButton, "aria-label", submitCommentText);
+            
             // click event for submit comment form on submit button click
             on(this.postCommentButton, "click, keypress", lang.hitch(this, function (evt) {
                 if (!this.appUtils.validateEvent(evt)) {
@@ -162,6 +163,8 @@ define([
             // create attachment button if comment table has attachments
             this._createAttachments();
             this._addExistingAttachments();
+           
+
         },
 
         /**
@@ -1380,6 +1383,7 @@ define([
                 this.inputContent = this._createDateField(inputDateGroupContainer, false, fieldname, currentField);
                 break;
             }
+
             // add default values to the fields
             this._addInputElementsValue(currentField, formContent, inputDateGroupContainer);
         },
@@ -1487,6 +1491,13 @@ define([
                 // Set Validation for the field on focus out
                 on(this.inputContent, "focusout", lang.hitch(this, function (evt) {
                     this._validateField(evt, currentField, true);
+                }));
+            }
+            if (currentField.type === "esriFieldTypeString") {
+                on(this.inputContent, 'keypress, keydown', lang.hitch(this, function (evt) {
+                    if(evt.keyCode == '13') {
+                        event.preventDefault();
+                    }
                 }));
             }
         },

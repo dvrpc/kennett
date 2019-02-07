@@ -102,9 +102,10 @@ define([
             }
             this._handleSplashScreenVisibility();
             //Set focus to sign-in as guest button on app load
-            setTimeout(lang.hitch(this, function () {
-                $(this.signinGuestButton).focus();
-            }), 200);
+            // @DISABLED by @mruane for weird behavior
+            // setTimeout(lang.hitch(this, function () {
+            //     $(this.signinGuestButton).focus();
+            // }), 200);
 
         },
 

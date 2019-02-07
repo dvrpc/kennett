@@ -2526,7 +2526,7 @@ label
     border-radius:20px;
     background-color:white;
     position: relative;
-    margin: 0 auto;
+    margin: 10px auto 0;
     color:#312867;
     padding: 50px;
     margin-bottom: 30px;
@@ -2596,11 +2596,20 @@ label
 
 
 @media only screen and (max-width:900px){
-.subtitleHeader{
-    display: none;
+    .subtitleHeader{
+        display: none;
+    }
+    .dvrpcHeaderName {
+        font-size:2em;
+        line-height: 40px
 }
-.dvrpcHeaderName {
-    font-size:2em;
-    line-height: 40px
 }
+
+@media only screen and (max-width : 480px) {
+    .dvrpcAppNameBanner{
+        width: 100%;
+        font-size: 0.9em;
+        padding: 40px 30px;
+        height: 200px;
+    }
 }
