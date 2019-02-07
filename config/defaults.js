@@ -52,8 +52,8 @@ define({
       //color theme.
     "theme": "#312867",
     "applicationName": "",
-    "applicationIcon": "",
-    "applicationFavicon": "/images/favicon.ico",
+    "applicationIcon": "/images/bug-favicon.png",
+    "applicationFavicon": "/images/bug-favicon.png",
 
     "signInSubtitle": "",
     "signInBackgroundImage": " ",
