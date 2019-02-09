@@ -119,7 +119,7 @@ define({
     "enableUSNGSearch": false,
     "enableMGRSSearch": false,
     "enableLatLongSearch": false,
-    "geographicalExtentLayer": "",
+    "geographicalExtentLayer": "Kennett Area Freight Transportation Study Area",
     //Lower level configuration
     "submitReportButtonText" : "Submit a Report", // Text for submit report button
     "submitReportButtonColor": "#35ac46", //Color for Submit Report button.If EMPTY default color will be  #35ac46.
