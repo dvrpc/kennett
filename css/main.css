@@ -2586,6 +2586,9 @@ label
     font-size: 14px;
     max-height: none;
 }
+.esriCTModelDialog {
+    top: 0px;
+}
 
 @media (min-width: 768px){
     .modal-dialog {
