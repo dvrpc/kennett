@@ -101,7 +101,7 @@ define({
     "reportedByField": "USERID",
     "locationField": "LONG_TEXT",
     "showMapFirst":"list",
-    "showHelpOnLoad": true,
+    "showHelpOnLoad": false,
     "showBaseMapGallery": false,
     "showLegend": true,
     "basemapGroup":"",
@@ -128,7 +128,7 @@ define({
     "imageBackgroundColor": "#312867", // Background color icons
     "imageForeGroundColor": "white", // Foreground color of icons values (gray or white)
     //Configurable text for help dialog and help link
-    "enableHelp":true,
+    "enableHelp":false,
     "enableShare": true,
     "helpLinkText": "learn how to use this tool",
     "helpDialogTitle":"How To Use",

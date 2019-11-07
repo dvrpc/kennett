@@ -425,15 +425,18 @@ html, body
 
 .esriCTSigninGuestBtn
 {
-    height: 50px;
+    /* height: 50px;
     width: 50px;
     background-repeat: no-repeat;
-    background-size: 50px;
-    display: inline-block;
+    background-size: 50px; */
+    /* display: inline-block; */
     cursor: pointer;
-    background-position: center center;
-    border-radius:25px;
-    margin: 0 6px 0 6px;
+    /* background-position: center center; */
+    /* border-radius:25px; */
+    /* margin: 0 6px 0 6px; */
+    font-size: 1.7em;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .esriCTSigninWithTxt

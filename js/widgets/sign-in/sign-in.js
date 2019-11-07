@@ -84,12 +84,12 @@ define([
                     "appUtils": this.appUtils
                 });
                 //Set focus to help link after splash screen is closed
-                this._helpScreen.onDialogClosed = lang.hitch(this, function () {
-                    $(this.signinHelpLink).focus();
-                });
+                // this._helpScreen.onDialogClosed = lang.hitch(this, function () {
+                //     $(this.signinHelpLink).focus();
+                // });
             } else {
                 //If help is turned off, then hide the help link
-                domClass.add(this.signinHelpLink, "esriCTHidden");
+                // domClass.add(this.signinHelpLink, "esriCTHidden");
             }
             this._createLoginScreenUI();
             if (this._config.enableGoogleplus) {
@@ -157,9 +157,9 @@ define([
             }
             document.title = applicationName;
             domAttr.set(this.signinContainerName, "innerHTML", applicationName);
-            domAttr.set(this.signinHelpLink, "innerHTML", this._config.helpLinkText);
-            domAttr.set(this.signinHelpLink, "title", this._config.helpLinkText);
-            domAttr.set(this.signinHelpLink, "aria-label", this._config.helpLinkText);
+            // domAttr.set(this.signinHelpLink, "innerHTML", this._config.helpLinkText);
+            // domAttr.set(this.signinHelpLink, "title", this._config.helpLinkText);
+            // domAttr.set(this.signinHelpLink, "aria-label", this._config.helpLinkText);
             if (this._config.signInSubtitle) {
                 domAttr.set(this.signinContainerText, "innerHTML", this._config.signInSubtitle);
             } else {
@@ -168,11 +168,11 @@ define([
             }
             domAttr.set(this.signinGuestUser, "innerHTML", this._config.i18n.signin.guestSigninText);
             domAttr.set(this.signinOptions, "innerHTML", this._config.i18n.signin.signinOptionsText);
-            if (this._config.signInBackgroundImage.indexOf("http") === 0) {
-                domStyle.set(this.signinBgImage, "backgroundImage", 'url(' + this._config.signInBackgroundImage + ')');
-            } else {
-                domStyle.set(this.signinBgImage, "backgroundImage", 'url(' + dojoConfig.baseURL + this._config.signInBackgroundImage + ')');
-            }
+            // if (this._config.signInBackgroundImage.indexOf("http") === 0) {
+            //     domStyle.set(this.signinBgImage, "backgroundImage", 'url(' + this._config.signInBackgroundImage + ')');
+            // } else {
+            //     domStyle.set(this.signinBgImage, "backgroundImage", 'url(' + dojoConfig.baseURL + this._config.signInBackgroundImage + ')');
+            // }
 
             //If guest login is disabled from configuration, make sure we are not showing it on login screen
             if (!this._config.enableGuestAccess) {
@@ -181,8 +181,8 @@ define([
 
             domAttr.set(this.signinOrText, "innerHTML", this._config.i18n.signin.signInOrText);
             domAttr.set(this.signinOrText, "title", this._config.i18n.signin.signInOrText);
-            domAttr.set(this.signinGuestButton, "title", this._config.i18n.signin.guestLoginTooltip);
-            domAttr.set(this.signinGuestButton, "aria-label", this._config.i18n.signin.guestLoginTooltip);
+            domAttr.set(this.signinGuestButton, "title", "View Results");
+            domAttr.set(this.signinGuestButton, "aria-label", "View Results");
             domAttr.set(this.signinFBButton, "title", this._config.i18n.signin.facebookLoginTooltip);
             domAttr.set(this.signinFBButton, "aria-label", this._config.i18n.signin.facebookLoginTooltip);
             domAttr.set(this.signinTwitterButton, "title", this._config.i18n.signin.twitterLoginTooltip);
@@ -234,7 +234,7 @@ define([
             domStyle.set(this.signinOrText, "backgroundColor", imageBackgroundColor);
             domStyle.set(this.signinCaptionSeparator, "borderColor", imageForeGroundColor);
             domStyle.set(this.signinOrText, "border", "2px solid " + imageForeGroundColor);
-            domStyle.set(this.signinHelpLink, "borderBottom", "1px solid " + loginScreenFontColor);
+            // domStyle.set(this.signinHelpLink, "borderBottom", "1px solid " + loginScreenFontColor);
             //Set image background color
             array.forEach(query(".esriCTIconsBackground", this.domNode), lang.hitch(this, function (currentIcon) {
                 domStyle.set(currentIcon, "backgroundColor", imageBackgroundColor);
@@ -249,7 +249,7 @@ define([
         _setLoginScreenIcons: function (iconColor) {
             var imageBaseURL;
             imageBaseURL = dojoConfig.baseURL + "/images/" + iconColor;
-            domStyle.set(this.signinGuestButton, "backgroundImage", 'url(' + imageBaseURL + "guest-user.png" + ')');
+            // domStyle.set(this.signinGuestButton, "backgroundImage", 'url(' + imageBaseURL + "guest-user.png" + ')');
             domStyle.set(this.signinFBButton, "backgroundImage", 'url(' + imageBaseURL + "facebook.png" + ')');
             domStyle.set(this.signinTwitterButton, "backgroundImage", 'url(' + imageBaseURL + "twitter.png" + ')');
             domStyle.set(this.signinGPlusButton, "backgroundImage", 'url(' + imageBaseURL + "googleplus.png" + ')');
@@ -268,12 +268,12 @@ define([
             this.own(on(this.signinFBButton, "click, keypress", lang.hitch(this, this._fbButtonClicked)));
             this.own(on(this.signinTwitterButton, "click, keypress", lang.hitch(this, this._twitterButtonClicked)));
             this.own(on(this.signinGPlusButton, "click, keypress", lang.hitch(this, this._gpButtonClicked)));
-            this.own(on(this.signinHelpLink, "click, keypress", lang.hitch(this, function (evt) {
-                if (!this.appUtils.validateEvent(evt)) {
-                    return;
-                }
-                this._helpScreen.showDialog("signin");
-            })));
+            // this.own(on(this.signinHelpLink, "click, keypress", lang.hitch(this, function (evt) {
+            //     if (!this.appUtils.validateEvent(evt)) {
+            //         return;
+            //     }
+            //     this._helpScreen.showDialog("signin");
+            // })));
             //handle identity manager cancel clicked event
             on(IdentityManager, "dialog-cancel", lang.hitch(this, function () {
                 window.location.reload();

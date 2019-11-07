@@ -92,11 +92,11 @@ define([
                 });
             }
             if (this.appConfig.enableShare) {
-                this._createShareDialogContent();
+                // this._createShareDialogContent();
             }
             //Create modal dialog
             if (this.appConfig.reportingPeriod === "Closed") {
-                this.appUtils.createReportingPeriodDialog();
+                // this.appUtils.createReportingPeriodDialog();
             }
             //set application title
             this._setApplicationTitle();

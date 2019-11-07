@@ -131,7 +131,7 @@ define([
         _selectedMapDetails: {},
         _menusList: {
             "signOut": false,
-            "signIn": true,
+            "signIn": false,
             "help": false
         },
         _isMyIssues: false,
@@ -232,7 +232,7 @@ define([
                         "token": "",
                         "processedUserName": ""
                     };
-                    this._menusList.signIn = true;
+                    this._menusList.signIn = false;
                     this._menusList.signOut = false;
                     //If user is not logged in keep editing flag to true by default
                     this.config.logInDetails.canEditFeatures = true;
